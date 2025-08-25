@@ -28,16 +28,19 @@ LiveData & Coroutines
 Navigation Component + Bottom Navigation
 Foreground Service with Notifications
 
-🖼️ Screenshots
-g1.jpg
-g2.jpg
-g3.jpg
-g4.jpg
-g5.jpg
-g6.jpg
+## 🖼️ Screenshots  
+<p align="center">
+  <img src="g1.jpg" width="200" />
+  <img src="g2.jpg" width="200" />
+  <img src="g3.jpg" width="200" />
+</p>
+<p align="center">
+  <img src="g4.jpg" width="200" />
+  <img src="g5.jpg" width="200" />
+  <img src="g6.jpg" width="200" />
+</p>
 
 ⚙️ Tech Stack
-
 Language: Kotlin
 Architecture: MVVM
 Dependency Injection: Hilt
