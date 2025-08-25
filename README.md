@@ -29,9 +29,12 @@ Navigation Component + Bottom Navigation
 Foreground Service with Notifications
 
 🖼️ Screenshots
-![Splash](p1.jpg)
-![Run Tracking](p2.jpg)
-![Statistics](p3.jpg)
+g1.jpg
+g2.jpg
+g3.jpg
+g4.jpg
+g5.jpg
+g6.jpg
 
 ⚙️ Tech Stack
 
