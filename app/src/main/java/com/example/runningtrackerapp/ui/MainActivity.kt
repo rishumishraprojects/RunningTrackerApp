@@ -20,7 +20,6 @@ import android.view.View
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
-    // ✅ Inject SharedPreferences
     @Inject
     lateinit var sharedPref: SharedPreferences
 
@@ -61,7 +60,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        // ✅ Update toolbar title with name from SharedPref
         val name = sharedPref.getString(KEY_NAME, null)
         val toolbarTitle = if (!name.isNullOrEmpty()) {
             "Let's go, $name!"

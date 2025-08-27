@@ -275,11 +275,9 @@ class TrackingFragment : Fragment(R.layout.fragment_tracking), OnMapReadyCallbac
 
     override fun onMapReady(googleMap: GoogleMap) {
         map = googleMap
-        // ✅ Map is ready to use here
-        // e.g. map?.isMyLocationEnabled = true (after permission check)
     }
 
-    // Forward fragment lifecycle to mapView
+
     override fun onResume() {
         super.onResume()
         mapView.onResume()

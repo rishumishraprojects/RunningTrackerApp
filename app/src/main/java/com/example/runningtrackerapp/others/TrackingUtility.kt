@@ -19,7 +19,7 @@ object TrackingUtility {
 
         if (!hasForeground) return false
 
-        // Android 13+ → also require POST_NOTIFICATIONS
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             if (!EasyPermissions.hasPermissions(context, Manifest.permission.POST_NOTIFICATIONS)) {
                 return false
@@ -33,7 +33,7 @@ object TrackingUtility {
                 Manifest.permission.ACCESS_BACKGROUND_LOCATION
             )
         } else {
-            // Android 9 and below only need foreground
+
             true
         }
     }
@@ -53,7 +53,7 @@ object TrackingUtility {
                 Manifest.permission.ACCESS_BACKGROUND_LOCATION
             )
         } else {
-            true // not needed pre-Q
+            true
         }
     }
     fun getFormattedStopWatch(ms: Long, includeMillis: Boolean = false): String{

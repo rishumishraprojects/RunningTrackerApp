@@ -65,7 +65,6 @@ class SetupFragment : Fragment(R.layout.fragment_setup), EasyPermissions.Permiss
     }
 
     private fun requestPermissions() {
-        // Step 1 → Foreground first
         if (!TrackingUtility.hasForegroundLocation(requireContext())) {
             val permissions = mutableListOf(
                 Manifest.permission.ACCESS_FINE_LOCATION,
@@ -86,7 +85,6 @@ class SetupFragment : Fragment(R.layout.fragment_setup), EasyPermissions.Permiss
             return
         }
 
-        // Step 2 → If Android Q+, check background
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q &&
             !TrackingUtility.hasBackgroundLocation(requireContext())
         ) {
