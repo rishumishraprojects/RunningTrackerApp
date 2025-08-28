@@ -27,7 +27,6 @@ object TrackingUtility {
         }
 
         return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            // Android 10+ requires background
             EasyPermissions.hasPermissions(
                 context,
                 Manifest.permission.ACCESS_BACKGROUND_LOCATION
